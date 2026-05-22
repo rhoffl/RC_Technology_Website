@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RC Technology LLC | AI Employees for Your Business</title>
+  <meta name="description" content="RC Technology LLC installs AI employees that automate inboxes, calendars, data cleanup, sales chatbots, appointment setting, and content repurposing." />
+  <link rel="icon" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body{background:#050b18;color:#f8fbff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif} 
+    .glass{background:rgba(255,255,255,.06);border:1px solid rgba(140,190,255,.18);box-shadow:0 20px 80px rgba(0,74,173,.18);backdrop-filter:blur(16px)}
+    .grad{background:linear-gradient(135deg,#00d4ff,#1677ff 55%,#8b5cf6)}
+    .glow{box-shadow:0 0 40px rgba(22,119,255,.35)}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const services = [
+  {name:'AI Inbox & Calendar Manager', price:'$3,500–$7,500 setup + $1,500–$3,000/mo', promise:'Reduce email/admin time by 70% in 14 days.', cost:'Missed follow-ups, executive burnout, and lost deals.'},
+  {name:'AI Data Cleanup Agency', price:'$2,500–$15,000/project', promise:'Clean and standardize business data in 7 days or less.', cost:'Bad reporting, duplicate records, failed AI adoption, and compliance risk.'},
+  {name:'AI Sales Chatbot', price:'$2,000–$8,000 setup + $500–$2,000/mo', promise:'Turn your website into a 24/7 AI sales machine.', cost:'After-hours leads leave, staff answer repetitive questions, conversions drop.'},
+  {name:'AI Content Repurposing', price:'$1,000–$5,000/mo', promise:'1 piece of content becomes 20+ revenue-generating assets.', cost:'Your best ideas stay invisible and inbound demand stays low.'},
+  {name:'AI Appointment Setter', price:'$1,500–$5,000 setup + $500–$1,500/mo', promise:'Never lose another lead because nobody followed up.', cost:'Manual scheduling delays, no-shows, and lower close rates.'}
+];
+const packages = [
+  ['Starter AI System','$1,997+','One automation, intake workflow, dashboard, 14-day launch'],
+  ['Growth Automation Suite','$4,997+','Chatbot + appointment setter + CRM integration + 30-day optimization'],
+  ['Enterprise AI Employee Program','$10,000+','Multi-workflow automation, governance, reporting, training, support']
+];
+function App(){return <main>
+  <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050b18]/80 backdrop-blur border-b border-white/10"><div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><img src="assets/rc-technology-logo.svg" className="h-12 w-auto"/><div className="hidden md:flex gap-7 text-sm text-slate-300"><a href="#services">Services</a><a href="#offers">Offers</a><a href="#profile">Company</a><a href="#contact">Contact</a></div><a href="#contact" className="px-5 py-2 rounded-full grad font-bold glow">Free AI Audit</a></div></nav>
+  <section className="pt-32 pb-20 px-6 overflow-hidden"><div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"><div><p className="text-cyan-300 uppercase tracking-[.25em] font-bold text-sm">AI Employees For Your Business</p><h1 className="text-5xl md:text-7xl font-black leading-tight mt-4">Stop paying humans to do repetitive work.</h1><p className="text-xl text-slate-300 mt-6 max-w-xl">RC Technology LLC installs AI-powered automation systems that save time, increase revenue, and operate 24/7 across sales, scheduling, data, content, inboxes, and customer communication.</p><div className="mt-8 flex flex-wrap gap-4"><a href="#contact" className="px-7 py-4 rounded-full grad font-bold glow">Book Free Strategy Call</a><a href="#services" className="px-7 py-4 rounded-full border border-blue-400/40 text-blue-100">Explore Services</a></div><p className="mt-5 text-sm text-slate-400">Guarantee: If we do not create measurable time savings or lead-flow improvement within 30 days, we continue optimization at no additional cost.</p></div><div className="relative"><img src="assets/hero.png" className="rounded-[2rem] border border-blue-300/20 glow"/></div></div></section>
+  <section id="services" className="py-20 px-6"><div className="max-w-7xl mx-auto"><h2 className="text-4xl md:text-5xl font-black">Clear AI Automation Offers</h2><p className="text-slate-300 mt-3 max-w-3xl">Each offer includes workflow discovery, custom configuration, integration support, training, launch, and performance optimization.</p><div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">{services.map((s,i)=><div className="glass rounded-3xl p-7" key={s.name}><div className="text-cyan-300 text-sm font-bold">0{i+1}</div><h3 className="text-2xl font-black mt-3">{s.name}</h3><p className="text-blue-100 font-bold mt-3">{s.price}</p><p className="text-slate-300 mt-4"><b>Offer:</b> {s.promise}</p><p className="text-slate-400 mt-3"><b>Cost of not using it:</b> {s.cost}</p></div>)}</div></div></section>
+  <section id="offers" className="py-20 px-6 bg-white/[.03]"><div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center"><img src="assets/growth.png" className="rounded-[2rem] border border-blue-300/20"/><div><h2 className="text-4xl md:text-5xl font-black">Offer Stack Built to Convert</h2><div className="mt-8 space-y-5">{packages.map(p=><div className="glass rounded-2xl p-6" key={p[0]}><div className="flex justify-between gap-3"><h3 className="text-2xl font-black">{p[0]}</h3><span className="text-cyan-300 font-black">{p[1]}</span></div><p className="text-slate-300 mt-2">{p[2]}</p></div>)}</div><div className="mt-7 p-6 rounded-2xl border border-cyan-300/30 bg-cyan-300/10"><b>Scarcity:</b> Custom AI deployments are capped at 5 new clients per month to protect quality, onboarding time, and support response.</div><div className="mt-4 p-6 rounded-2xl border border-violet-300/30 bg-violet-300/10"><b>Bonus:</b> Every Growth or Enterprise client receives a free AI Opportunity Audit, CRM workflow map, and 30-day optimization report.</div></div></div></section>
+  <section id="profile" className="py-20 px-6"><div className="max-w-6xl mx-auto text-center"><h2 className="text-4xl md:text-5xl font-black">Company Profile</h2><p className="text-slate-300 mt-5 text-xl">RC Technology LLC is an AI automation and technology solutions company helping small and midsize businesses deploy practical AI systems without enterprise complexity.</p><div className="grid md:grid-cols-3 gap-6 mt-10"><div className="glass p-6 rounded-3xl"><h3 className="font-black text-2xl">Mission</h3><p className="text-slate-300 mt-3">Help businesses operate faster, smarter, and more profitably with intelligent automation.</p></div><div className="glass p-6 rounded-3xl"><h3 className="font-black text-2xl">Industries</h3><p className="text-slate-300 mt-3">Healthcare, legal, real estate, finance, professional services, SaaS, and local service companies.</p></div><div className="glass p-6 rounded-3xl"><h3 className="font-black text-2xl">Advantage</h3><p className="text-slate-300 mt-3">Fast deployment, custom workflows, measurable ROI, and ongoing optimization.</p></div></div></div></section>
+  <section id="contact" className="py-20 px-6"><div className="max-w-5xl mx-auto glass rounded-[2rem] p-8 md:p-12 grid md:grid-cols-2 gap-8"><div><h2 className="text-4xl font-black">Get your free AI audit</h2><p className="text-slate-300 mt-4">We will identify 3–5 workflows your business can automate immediately, estimate savings, and recommend the fastest path to launch.</p><p className="mt-5 text-slate-400">Email: hello@rctechnologyllc.com<br/>Phone: (000) 000-0000</p></div><form className="space-y-4"><input placeholder="Name" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10"/><input placeholder="Email" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10"/><input placeholder="Company" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10"/><textarea placeholder="What do you want to automate?" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 h-28"></textarea><button type="button" className="w-full px-7 py-4 rounded-full grad font-bold glow">Request Audit</button></form></div></section>
+  <footer className="py-10 px-6 border-t border-white/10 text-center text-slate-500">© 2026 RC Technology LLC. Intelligent Automation. Real Business Results.</footer>
+</main>}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

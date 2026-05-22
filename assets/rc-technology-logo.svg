@@ -1,0 +1,10 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="360" rx="42" fill="#061326"/>
+<defs><linearGradient id="g" x1="160" y1="40" x2="820" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4FF"/><stop offset="0.55" stop-color="#1677FF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient><filter id="glow" x="0" y="0" width="1200" height="360" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<circle cx="190" cy="180" r="104" stroke="url(#g)" stroke-width="24" opacity=".95"/>
+<path d="M138 238V94H220C259 94 284 116 284 151C284 177 270 196 246 205L291 238H244L205 210H174V238H138ZM174 178H217C237 178 248 169 248 153C248 137 237 128 217 128H174V178Z" fill="#EAF3FF"/>
+<path d="M76 134h58M76 180h48M76 226h58" stroke="#00D4FF" stroke-width="14" stroke-linecap="round"/><circle cx="65" cy="134" r="16" fill="#00D4FF"/><circle cx="65" cy="180" r="16" fill="#EAF3FF"/><circle cx="65" cy="226" r="16" fill="#1677FF"/>
+<text x="340" y="166" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="800" font-size="72" fill="#F8FBFF" letter-spacing="1">RC Technology LLC</text>
+<text x="344" y="222" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="500" font-size="32" fill="#9CC9FF">Intelligent Automation. Real Business Results.</text>
+<path d="M344 254H960" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+</svg>
